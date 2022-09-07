@@ -27,7 +27,7 @@ commands:
     steps:
       - run:
           name: Install Node.js 13
-          command:
+          command: |
             # Install Node.js LTS version as our base Node.js version
             curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
             sudo apt install -y nodejs
@@ -68,7 +68,7 @@ commands:
               npm install
               npm run migration:revert
             fi    
-                 
+
 jobs:
  
   build-frontend:
