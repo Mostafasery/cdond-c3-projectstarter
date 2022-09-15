@@ -1,7 +1,7 @@
 - name: "Install Node.js 13"
   become: true
   shell: |
-    # Install Node.js LTS version as our base Node.js version
+    #Install Node.js LTS version as our base Node.js version
     curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
     sudo apt install -y nodejs
     
